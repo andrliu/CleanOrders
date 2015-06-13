@@ -10,7 +10,7 @@
 		497698C51B2BC86800E05810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 497698C41B2BC86800E05810 /* main.m */; };
 		497698C81B2BC86800E05810 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 497698C71B2BC86800E05810 /* AppDelegate.m */; };
 		497698CB1B2BC86800E05810 /* CleanOrders.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 497698C91B2BC86800E05810 /* CleanOrders.xcdatamodeld */; };
-		497698CE1B2BC86800E05810 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497698CD1B2BC86800E05810 /* ViewController.m */; };
+		497698CE1B2BC86800E05810 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497698CD1B2BC86800E05810 /* RootController.m */; };
 		497698D11B2BC86800E05810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497698CF1B2BC86800E05810 /* Main.storyboard */; };
 		497698D31B2BC86800E05810 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497698D21B2BC86800E05810 /* Images.xcassets */; };
 		497698D61B2BC86800E05810 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497698D41B2BC86800E05810 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		497698C61B2BC86800E05810 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		497698C71B2BC86800E05810 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		497698CA1B2BC86800E05810 /* CleanOrders.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CleanOrders.xcdatamodel; sourceTree = "<group>"; };
-		497698CC1B2BC86800E05810 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		497698CD1B2BC86800E05810 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		497698CC1B2BC86800E05810 /* RootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		497698CD1B2BC86800E05810 /* RootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		497698D01B2BC86800E05810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		497698D21B2BC86800E05810 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		497698D51B2BC86800E05810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			children = (
 				497698C61B2BC86800E05810 /* AppDelegate.h */,
 				497698C71B2BC86800E05810 /* AppDelegate.m */,
-				497698CC1B2BC86800E05810 /* ViewController.h */,
-				497698CD1B2BC86800E05810 /* ViewController.m */,
+				497698CC1B2BC86800E05810 /* RootController.h */,
+				497698CD1B2BC86800E05810 /* RootController.m */,
 				497698CF1B2BC86800E05810 /* Main.storyboard */,
 				497698D21B2BC86800E05810 /* Images.xcassets */,
 				497698D41B2BC86800E05810 /* LaunchScreen.xib */,
@@ -224,7 +224,7 @@
 			files = (
 				497698C81B2BC86800E05810 /* AppDelegate.m in Sources */,
 				497698CB1B2BC86800E05810 /* CleanOrders.xcdatamodeld in Sources */,
-				497698CE1B2BC86800E05810 /* ViewController.m in Sources */,
+				497698CE1B2BC86800E05810 /* RootController.m in Sources */,
 				497698C51B2BC86800E05810 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +420,7 @@
 				497698E71B2BC86900E05810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		497698E81B2BC86900E05810 /* Build configuration list for PBXNativeTarget "CleanOrdersTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +429,7 @@
 				497698EA1B2BC86900E05810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
