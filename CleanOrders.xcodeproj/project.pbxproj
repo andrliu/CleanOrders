@@ -15,6 +15,7 @@
 		497698D31B2BC86800E05810 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497698D21B2BC86800E05810 /* Images.xcassets */; };
 		497698D61B2BC86800E05810 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497698D41B2BC86800E05810 /* LaunchScreen.xib */; };
 		497698E21B2BC86900E05810 /* CleanOrdersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 497698E11B2BC86900E05810 /* CleanOrdersTests.m */; };
+		49B667A81B2C2AC0002C7A43 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B667A71B2C2AC0002C7A43 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 		497698DB1B2BC86900E05810 /* CleanOrdersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanOrdersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		497698E01B2BC86900E05810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		497698E11B2BC86900E05810 /* CleanOrdersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CleanOrdersTests.m; sourceTree = "<group>"; };
+		49B667A61B2C2AC0002C7A43 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		49B667A71B2C2AC0002C7A43 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				497698C71B2BC86800E05810 /* AppDelegate.m */,
 				497698CC1B2BC86800E05810 /* RootController.h */,
 				497698CD1B2BC86800E05810 /* RootController.m */,
+				49B667A61B2C2AC0002C7A43 /* DetailViewController.h */,
+				49B667A71B2C2AC0002C7A43 /* DetailViewController.m */,
 				497698CF1B2BC86800E05810 /* Main.storyboard */,
 				497698D21B2BC86800E05810 /* Images.xcassets */,
 				497698D41B2BC86800E05810 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B667A81B2C2AC0002C7A43 /* DetailViewController.m in Sources */,
 				497698C81B2BC86800E05810 /* AppDelegate.m in Sources */,
 				497698CB1B2BC86800E05810 /* CleanOrders.xcdatamodeld in Sources */,
 				497698CE1B2BC86800E05810 /* RootController.m in Sources */,
