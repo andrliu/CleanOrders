@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Root Controller-->
@@ -79,25 +80,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-5h-30p">
-                                <rect key="frame" x="110" y="269" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Ogv-Qj-za2"/>
-                                    <constraint firstAttribute="height" constant="30" id="QI1-lk-cJ3"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-5h-30p">
+                                <rect key="frame" x="99" y="452" width="100" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3A-gT-ue4">
+                                <rect key="frame" x="0.0" y="64" width="320" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="mG0-5h-30p" secondAttribute="centerX" id="6vK-8Q-uDS"/>
-                            <constraint firstAttribute="centerY" secondItem="mG0-5h-30p" secondAttribute="centerY" id="yyx-m9-JuC"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="p3A-gT-ue4" secondAttribute="bottom" multiplier="2" id="6BB-Yb-Ytz"/>
+                            <constraint firstItem="p3A-gT-ue4" firstAttribute="leading" secondItem="LRE-Tl-JPr" secondAttribute="leadingMargin" constant="-16" id="E87-xq-sdG"/>
+                            <constraint firstItem="p3A-gT-ue4" firstAttribute="top" secondItem="Amb-to-oxD" secondAttribute="bottom" id="bii-Ct-AyD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p3A-gT-ue4" secondAttribute="trailing" constant="-16" id="xfv-Z8-FrM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kfW-0l-ynW"/>
                     <connections>
+                        <outlet property="googleMap" destination="p3A-gT-ue4" id="vXX-6s-iky"/>
                         <outlet property="label" destination="mG0-5h-30p" id="jg5-Xr-OjH"/>
                     </connections>
                 </viewController>

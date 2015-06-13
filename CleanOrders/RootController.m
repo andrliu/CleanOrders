@@ -9,7 +9,7 @@
 #import "RootController.h"
 #import "DetailViewController.h"
 
-#define api @"http://beta.json-generator.com/api/json/get/FvLf_uJ"
+#define api @"http://beta.json-generator.com/api/json/get/IAzEWqN"
 
 @interface RootController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Orders";
     NSURL *url = [NSURL URLWithString:api];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
