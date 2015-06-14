@@ -34,6 +34,7 @@
 		49B667F61B2CCEF4002C7A43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B667F51B2CCEF4002C7A43 /* Security.framework */; };
 		49B667FC1B2CD95C002C7A43 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B667FB1B2CD95C002C7A43 /* GoogleMaps.framework */; };
 		49B667FE1B2CD981002C7A43 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49B667FD1B2CD981002C7A43 /* GoogleMaps.bundle */; };
+		49B6680A1B2D6D3F002C7A43 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B668091B2D6D3F002C7A43 /* Order.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		49B667F51B2CCEF4002C7A43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		49B667FB1B2CD95C002C7A43 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../GoogleMaps-iOS-1.9.1/GoogleMaps.framework"; sourceTree = "<group>"; };
 		49B667FD1B2CD981002C7A43 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = ../GoogleMaps.bundle; sourceTree = "<group>"; };
+		49B668081B2D6D3F002C7A43 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Order.h; path = ../Order.h; sourceTree = "<group>"; };
+		49B668091B2D6D3F002C7A43 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Order.m; path = ../Order.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				497698CD1B2BC86800E05810 /* RootController.m */,
 				49B667A61B2C2AC0002C7A43 /* DetailViewController.h */,
 				49B667A71B2C2AC0002C7A43 /* DetailViewController.m */,
+				49B668081B2D6D3F002C7A43 /* Order.h */,
+				49B668091B2D6D3F002C7A43 /* Order.m */,
 				497698CF1B2BC86800E05810 /* Main.storyboard */,
 				497698D21B2BC86800E05810 /* Images.xcassets */,
 				497698D41B2BC86800E05810 /* LaunchScreen.xib */,
@@ -307,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B6680A1B2D6D3F002C7A43 /* Order.m in Sources */,
 				49B667A81B2C2AC0002C7A43 /* DetailViewController.m in Sources */,
 				497698C81B2BC86800E05810 /* AppDelegate.m in Sources */,
 				497698CB1B2BC86800E05810 /* CleanOrders.xcdatamodeld in Sources */,

@@ -3,7 +3,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Root Controller-->
@@ -80,34 +79,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-5h-30p">
-                                <rect key="frame" x="99" y="452" width="100" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3A-gT-ue4">
-                                <rect key="frame" x="0.0" y="64" width="320" height="220"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Yw-pM-Dof">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GI6-sk-z0Q" appends="YES" id="7e4-R4-Poe"/>
+                                </connections>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="p3A-gT-ue4" secondAttribute="bottom" multiplier="2" id="6BB-Yb-Ytz"/>
-                            <constraint firstItem="p3A-gT-ue4" firstAttribute="leading" secondItem="LRE-Tl-JPr" secondAttribute="leadingMargin" constant="-16" id="E87-xq-sdG"/>
-                            <constraint firstItem="p3A-gT-ue4" firstAttribute="top" secondItem="Amb-to-oxD" secondAttribute="bottom" id="bii-Ct-AyD"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="p3A-gT-ue4" secondAttribute="trailing" constant="-16" id="xfv-Z8-FrM"/>
+                            <constraint firstItem="Z0H-uf-BkK" firstAttribute="top" secondItem="8Yw-pM-Dof" secondAttribute="bottom" id="3qh-aP-2Gw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Yw-pM-Dof" secondAttribute="trailing" constant="-16" id="8wZ-aK-mbb"/>
+                            <constraint firstItem="8Yw-pM-Dof" firstAttribute="leading" secondItem="LRE-Tl-JPr" secondAttribute="leadingMargin" constant="-16" id="Gtg-Y6-WDK"/>
+                            <constraint firstItem="8Yw-pM-Dof" firstAttribute="top" secondItem="LRE-Tl-JPr" secondAttribute="topMargin" id="acN-oz-hCB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kfW-0l-ynW"/>
                     <connections>
-                        <outlet property="googleMap" destination="p3A-gT-ue4" id="vXX-6s-iky"/>
-                        <outlet property="label" destination="mG0-5h-30p" id="jg5-Xr-OjH"/>
+                        <outlet property="detailScrollView" destination="8Yw-pM-Dof" id="hIU-5q-ZMi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vMr-la-zoD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GI6-sk-z0Q">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="sUM-Jm-DcC" id="EHd-b0-fit"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="990" y="341"/>
+            <point key="canvasLocation" x="976" y="341"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aAS-SL-zm8">

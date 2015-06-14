@@ -10,6 +10,6 @@
 
 @interface DetailViewController : UIViewController
 
-@property NSDictionary *dic;
+@property NSDictionary *dictionaryOfDetail;
 
 @end
