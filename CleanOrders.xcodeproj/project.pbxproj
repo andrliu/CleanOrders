@@ -32,9 +32,9 @@
 		49B667F21B2CCEE2002C7A43 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B667F11B2CCEE2002C7A43 /* CoreBluetooth.framework */; };
 		49B667F41B2CCEE9002C7A43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B667F31B2CCEE9002C7A43 /* CoreGraphics.framework */; };
 		49B667F61B2CCEF4002C7A43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B667F51B2CCEF4002C7A43 /* Security.framework */; };
-		49B667FC1B2CD95C002C7A43 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B667FB1B2CD95C002C7A43 /* GoogleMaps.framework */; };
 		49B667FE1B2CD981002C7A43 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 49B667FD1B2CD981002C7A43 /* GoogleMaps.bundle */; };
 		49B6680A1B2D6D3F002C7A43 /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B668091B2D6D3F002C7A43 /* Order.m */; };
+		49B6680F1B2E20E3002C7A43 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B6680E1B2E20E3002C7A43 /* GoogleMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,10 +80,10 @@
 		49B667F11B2CCEE2002C7A43 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		49B667F31B2CCEE9002C7A43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		49B667F51B2CCEF4002C7A43 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		49B667FB1B2CD95C002C7A43 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../GoogleMaps-iOS-1.9.1/GoogleMaps.framework"; sourceTree = "<group>"; };
 		49B667FD1B2CD981002C7A43 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = ../GoogleMaps.bundle; sourceTree = "<group>"; };
 		49B668081B2D6D3F002C7A43 /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Order.h; path = ../Order.h; sourceTree = "<group>"; };
 		49B668091B2D6D3F002C7A43 /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Order.m; path = ../Order.m; sourceTree = "<group>"; };
+		49B6680E1B2E20E3002C7A43 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49B667FC1B2CD95C002C7A43 /* GoogleMaps.framework in Frameworks */,
 				49B667F61B2CCEF4002C7A43 /* Security.framework in Frameworks */,
 				49B667F41B2CCEE9002C7A43 /* CoreGraphics.framework in Frameworks */,
 				49B667F21B2CCEE2002C7A43 /* CoreBluetooth.framework in Frameworks */,
@@ -106,6 +105,7 @@
 				49B667E01B2CCD77002C7A43 /* GLKit.framework in Frameworks */,
 				49B667DE1B2CCD71002C7A43 /* CoreText.framework in Frameworks */,
 				49B667DC1B2CCD6C002C7A43 /* CoreLocation.framework in Frameworks */,
+				49B6680F1B2E20E3002C7A43 /* GoogleMaps.framework in Frameworks */,
 				49B667DA1B2CCD67002C7A43 /* CoreData.framework in Frameworks */,
 				49B667D81B2CCD63002C7A43 /* AVFoundation.framework in Frameworks */,
 			);
@@ -189,8 +189,8 @@
 		49B667FA1B2CD946002C7A43 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49B6680E1B2E20E3002C7A43 /* GoogleMaps.framework */,
 				49B667FD1B2CD981002C7A43 /* GoogleMaps.bundle */,
-				49B667FB1B2CD95C002C7A43 /* GoogleMaps.framework */,
 				49B667F51B2CCEF4002C7A43 /* Security.framework */,
 				49B667F31B2CCEE9002C7A43 /* CoreGraphics.framework */,
 				49B667F11B2CCEE2002C7A43 /* CoreBluetooth.framework */,
@@ -260,9 +260,11 @@
 				TargetAttributes = {
 					497698BE1B2BC86800E05810 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = DCD4R4P68C;
 					};
 					497698DA1B2BC86900E05810 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = DCD4R4P68C;
 						TestTargetID = 497698BE1B2BC86800E05810;
 					};
 				};
@@ -376,6 +378,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -399,6 +402,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -420,6 +424,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -436,6 +441,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -450,6 +456,8 @@
 					armv7s,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CleanOrders",
@@ -458,6 +466,7 @@
 				INFOPLIST_FILE = CleanOrders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -470,6 +479,8 @@
 					armv7s,
 				);
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CleanOrders",
@@ -478,6 +489,7 @@
 				INFOPLIST_FILE = CleanOrders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -485,6 +497,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -496,6 +510,7 @@
 				INFOPLIST_FILE = CleanOrdersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanOrders.app/CleanOrders";
 			};
 			name = Debug;
@@ -504,6 +519,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -511,9 +528,101 @@
 				INFOPLIST_FILE = CleanOrdersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanOrders.app/CleanOrders";
 			};
 			name = Release;
+		};
+		49B6680B1B2E02A6002C7A43 /* Ad_Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Ad_Hoc;
+		};
+		49B6680C1B2E02A6002C7A43 /* Ad_Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CleanOrders",
+					"/Users/Andrew/Downloads/GoogleMaps-iOS-1.9.1",
+				);
+				INFOPLIST_FILE = CleanOrders/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Ad_Hoc;
+		};
+		49B6680D1B2E02A6002C7A43 /* Ad_Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CleanOrdersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanOrders.app/CleanOrders";
+			};
+			name = Ad_Hoc;
 		};
 /* End XCBuildConfiguration section */
 
@@ -522,6 +631,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				497698E31B2BC86900E05810 /* Debug */,
+				49B6680B1B2E02A6002C7A43 /* Ad_Hoc */,
 				497698E41B2BC86900E05810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -531,6 +641,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				497698E61B2BC86900E05810 /* Debug */,
+				49B6680C1B2E02A6002C7A43 /* Ad_Hoc */,
 				497698E71B2BC86900E05810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -540,6 +651,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				497698E91B2BC86900E05810 /* Debug */,
+				49B6680D1B2E02A6002C7A43 /* Ad_Hoc */,
 				497698EA1B2BC86900E05810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
